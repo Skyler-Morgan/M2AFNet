@@ -138,6 +138,8 @@ def main():
             flog = torch.mul(oct_ccon, oct_log)+torch.mul(cfp_ccon, cfp_log)
             pre = clh(flog)
             loss = criterion(pre, labels)
+            supl = 0.006*epoch+0.3  
+            loss = (1-supl)*la+supl*lc  
             losses.update(loss.item(), bsz)
             loss.backward()
             opt1.step()
