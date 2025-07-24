@@ -32,3 +32,12 @@ Multi is the code for Multi branch.
 # Citation！
 If you find this work helpful for your project, please consider citing the following paper:
 
+@article{liu2025diagnosis,
+  title={Diagnosis of retinal diseases driven by Mamba multi-modal CLIP auxiliary fusion network},
+  author={Liu, Qing and Zhu, Hongqing and Qian, Tianwei and Huang, Bingcang and Wang, Ying},
+  journal={Information Fusion},
+  pages={103523},
+  year={2025},
+  publisher={Elsevier},
+  doi = {10.1016/j.inffus.2025.103523}
+}
