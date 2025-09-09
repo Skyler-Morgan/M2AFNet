@@ -12,17 +12,6 @@ import lib.readData
 from tensorboardX import SummaryWriter
 import time
 import argparse
-from mamba_ssm.modules.mamba_simple import Mamba
-class Mamba(nn.Module):
-    def __init__(self, dim):
-        super(Mamba, self).__init__()
-        self.encoder = Mamba(dim)
-        self.conv33conv33conv11 = nn.Sequential(
-            nn.Conv1d(in_channels=2, out_channels=2, kernel_size=3, stride=1, padding=1),
-            nn.BatchNorm1d(2),
-            nn.ReLU(),
-        )
-        self.norm = nn.LayerNorm(dim)
 def parse_option():
     parser = argparse.ArgumentParser('argument for training')
     parser.add_argument('--saveroot', type=str, default='../data3m_train.npz',
