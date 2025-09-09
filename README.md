@@ -14,12 +14,6 @@ Copy the octa-500_ground_truth \ OCTA-500 \ OCTA_3M \ Project Maps \ OCT (FULL) 
 
 Copy octa-500_ground_truth \ OCTA-500 \ OCTA3M \ Text labels.xlsx to OCTA-300 \.
 
-The processing of datasets in the dataprocess.py
-
-lib：
-
-The lib package is some data reading code！
-
 # Code run！
 Bscan is the code execution for Bscan slicing.
 
